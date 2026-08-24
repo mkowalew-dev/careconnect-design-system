@@ -5,3 +5,4 @@ storybook-static/
 
 # SDD planning docs reference the private CareConnect monorepo — never publish them here
 docs/
+.superpowers/
