@@ -29,5 +29,13 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Verify published CSS includes design tokens
+        run: |
+          npm run build
+          if ! grep -q -- "--cc-primary:" dist/*.css; then
+            echo "ERROR: built CSS is missing design token definitions (--cc-primary) — check src/index.ts imports global.css" >&2
+            exit 1
+          fi
+
       - name: Build Storybook
         run: npm run build-storybook
