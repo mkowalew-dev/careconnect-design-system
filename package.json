@@ -15,12 +15,16 @@
     },
     "./styles": "./dist/careconnect-design-system.css"
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "storybook dev -p 6006",
     "build": "vite build",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build -o storybook-static"
+    "build-storybook": "storybook build -o storybook-static",
+    "changeset": "changeset",
+    "version-packages": "changeset version"
   },
   "dependencies": {
     "@fullcalendar/core": "^6.1.21",
@@ -38,6 +42,7 @@
     "react-dom": "^18.3.0"
   },
   "devDependencies": {
+    "@changesets/cli": "^3.0.1",
     "@storybook/addon-a11y": "^10.5.10",
     "@storybook/addon-docs": "^10.5.10",
     "@storybook/addon-links": "^10.5.10",
