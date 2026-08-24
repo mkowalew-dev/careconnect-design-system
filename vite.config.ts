@@ -2,6 +2,9 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import dts from 'vite-plugin-dts';
 import path from 'path';
+import pkg from './package.json' with { type: 'json' };
+
+const externalDeps = Object.keys(pkg.dependencies ?? {});
 
 export default defineConfig({
   plugins: [
@@ -15,7 +18,12 @@ export default defineConfig({
       fileName: () => 'index.js',
     },
     rollupOptions: {
-      external: ['react', 'react-dom', 'react/jsx-runtime'],
+      external: [
+        'react',
+        'react-dom',
+        'react/jsx-runtime',
+        ...externalDeps.map((dep) => new RegExp(`^${dep}($|/)`)),
+      ],
     },
   },
 });
