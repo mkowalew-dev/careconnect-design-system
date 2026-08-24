@@ -1,0 +1,21 @@
+.cc-date-picker { display: flex; flex-direction: column; gap: var(--cc-space-2); }
+.cc-date-picker--full { width: 100%; }
+.cc-date-picker__label { font-size: var(--cc-text-sm); font-weight: 500; color: var(--cc-text); }
+.cc-date-picker__input {
+  padding: var(--cc-space-2) var(--cc-space-3);
+  font-family: var(--cc-font-body);
+  font-size: var(--cc-text-sm);
+  border: 1px solid var(--cc-border);
+  border-radius: var(--cc-radius-md);
+  background: var(--cc-bg-elevated);
+  color: var(--cc-text);
+}
+.cc-date-picker__input:focus { outline: none; border-color: var(--cc-primary); box-shadow: 0 0 0 3px var(--cc-primary-subtle); }
+.cc-date-picker__input--error { border-color: var(--cc-error); }
+.cc-date-picker__error { font-size: var(--cc-text-xs); color: var(--cc-error); }
+
+.cc-date-range { display: flex; flex-direction: column; gap: var(--cc-space-2); }
+.cc-date-range--full { width: 100%; }
+.cc-date-range__label { font-size: var(--cc-text-sm); font-weight: 500; color: var(--cc-text); }
+.cc-date-range__inputs { display: flex; align-items: flex-end; gap: var(--cc-space-3); flex-wrap: wrap; }
+.cc-date-range__sep { color: var(--cc-text-muted); padding-bottom: var(--cc-space-2); }

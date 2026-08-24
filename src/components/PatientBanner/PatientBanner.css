@@ -1,0 +1,17 @@
+.cc-patient-banner {
+  display: flex; align-items: flex-start; gap: var(--cc-space-4);
+  padding: var(--cc-space-5);
+  background: var(--cc-bg-elevated);
+  border: 1px solid var(--cc-border);
+  border-radius: var(--cc-radius-lg);
+}
+.cc-patient-banner__info { flex: 1; min-width: 0; }
+.cc-patient-banner__row { display: flex; align-items: center; gap: var(--cc-space-3); flex-wrap: wrap; }
+.cc-patient-banner__name { margin: 0; font-size: var(--cc-text-xl); }
+.cc-patient-banner__meta { margin: var(--cc-space-1) 0 0; font-size: var(--cc-text-sm); color: var(--cc-text-secondary); }
+.cc-patient-banner__alerts { display: flex; flex-wrap: wrap; gap: var(--cc-space-2); margin-top: var(--cc-space-3); }
+.cc-patient-banner__alert {
+  font-size: var(--cc-text-xs); font-weight: 600; color: var(--cc-error);
+  background: #FDECEA; padding: 2px var(--cc-space-2); border-radius: var(--cc-radius-full);
+}
+.cc-patient-banner__actions { display: flex; gap: var(--cc-space-2); flex-shrink: 0; }

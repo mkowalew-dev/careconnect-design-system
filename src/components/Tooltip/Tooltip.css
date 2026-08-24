@@ -1,0 +1,12 @@
+.cc-tooltip { position: relative; display: inline-flex; }
+.cc-tooltip__bubble {
+  position: absolute; left: 50%; transform: translateX(-50%);
+  padding: var(--cc-space-2) var(--cc-space-3);
+  background: var(--cc-text); color: var(--cc-text-inverse);
+  font-size: var(--cc-text-xs); border-radius: var(--cc-radius-md);
+  white-space: nowrap; opacity: 0; pointer-events: none; transition: opacity var(--cc-transition);
+  z-index: 10;
+}
+.cc-tooltip__bubble--top { bottom: calc(100% + 8px); }
+.cc-tooltip__bubble--bottom { top: calc(100% + 8px); }
+.cc-tooltip:hover .cc-tooltip__bubble, .cc-tooltip:focus-within .cc-tooltip__bubble { opacity: 1; }

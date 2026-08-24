@@ -1,0 +1,18 @@
+.cc-textarea-wrapper { display: flex; flex-direction: column; gap: var(--cc-space-2); }
+.cc-textarea-wrapper--full { width: 100%; }
+.cc-textarea__label { font-size: var(--cc-text-sm); font-weight: 500; color: var(--cc-text); }
+.cc-textarea {
+  min-height: 96px;
+  padding: var(--cc-space-3);
+  font-family: var(--cc-font-body);
+  font-size: var(--cc-text-sm);
+  border: 1px solid var(--cc-border);
+  border-radius: var(--cc-radius-md);
+  background: var(--cc-bg-elevated);
+  color: var(--cc-text);
+  resize: vertical;
+}
+.cc-textarea:focus { outline: none; border-color: var(--cc-primary); box-shadow: 0 0 0 3px var(--cc-primary-subtle); }
+.cc-textarea--error { border-color: var(--cc-error); }
+.cc-textarea__error { font-size: var(--cc-text-xs); color: var(--cc-error); }
+.cc-textarea__hint { font-size: var(--cc-text-xs); color: var(--cc-text-muted); }

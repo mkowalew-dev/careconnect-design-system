@@ -1,0 +1,4 @@
+.cc-divider { border: none; border-top: 1px solid var(--cc-border); margin: var(--cc-space-4) 0; }
+.cc-divider-labeled { display: flex; align-items: center; gap: var(--cc-space-3); margin: var(--cc-space-4) 0; }
+.cc-divider-labeled__line { flex: 1; height: 1px; background: var(--cc-border); }
+.cc-divider-labeled__text { font-size: var(--cc-text-xs); color: var(--cc-text-muted); text-transform: uppercase; letter-spacing: 0.04em; }

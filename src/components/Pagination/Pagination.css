@@ -1,0 +1,7 @@
+.cc-pagination { display: flex; align-items: center; gap: var(--cc-space-3); }
+.cc-pagination__pages { display: flex; gap: var(--cc-space-1); }
+.cc-pagination__page {
+  min-width: 32px; height: 32px; border: 1px solid var(--cc-border); border-radius: var(--cc-radius-md);
+  background: var(--cc-bg-elevated); color: var(--cc-text-secondary); font-size: var(--cc-text-sm); cursor: pointer;
+}
+.cc-pagination__page--active { background: var(--cc-primary); border-color: var(--cc-primary); color: white; font-weight: 600; }

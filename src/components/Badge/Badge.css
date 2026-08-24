@@ -1,0 +1,49 @@
+.cc-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--cc-space-1);
+  padding: 2px var(--cc-space-2);
+  font-size: var(--cc-text-xs);
+  font-weight: 600;
+  border-radius: var(--cc-radius-full);
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+
+.cc-badge__dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.cc-badge--default {
+  background: var(--cc-bg-muted);
+  color: var(--cc-text-secondary);
+}
+
+.cc-badge--success,
+.cc-badge--completed {
+  background: #E8F5F3;
+  color: var(--cc-success);
+}
+
+.cc-badge--warning,
+.cc-badge--prebooked {
+  background: #FDF6E3;
+  color: #B8860B;
+}
+
+.cc-badge--error,
+.cc-badge--cancelled {
+  background: #FDECEA;
+  color: var(--cc-error);
+}
+
+.cc-badge--info,
+.cc-badge--in-office {
+  background: var(--cc-primary-subtle);
+  color: var(--cc-primary);
+}
+
+.cc-badge--prebooked { background: #EDE9FE; color: #6D28D9; }

@@ -1,0 +1,11 @@
+.cc-vitals { background: var(--cc-bg-elevated); border: 1px solid var(--cc-border); border-radius: var(--cc-radius-lg); padding: var(--cc-space-4); }
+.cc-vitals__header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: var(--cc-space-4); }
+.cc-vitals__title { margin: 0; font-size: var(--cc-text-base); }
+.cc-vitals__time { font-size: var(--cc-text-xs); color: var(--cc-text-muted); }
+.cc-vitals__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); gap: var(--cc-space-3); }
+.cc-vitals__item { padding: var(--cc-space-3); background: var(--cc-bg-muted); border-radius: var(--cc-radius-md); border: 1px solid transparent; }
+.cc-vitals__item--warning { border-color: var(--cc-warning); background: #FDF6E3; }
+.cc-vitals__item--critical { border-color: var(--cc-error); background: #FDECEA; }
+.cc-vitals__label { display: block; font-size: var(--cc-text-xs); color: var(--cc-text-muted); margin-bottom: 4px; }
+.cc-vitals__value { font-size: var(--cc-text-lg); font-weight: 700; color: var(--cc-text); }
+.cc-vitals__unit { margin-left: 4px; font-size: var(--cc-text-xs); font-weight: 500; color: var(--cc-text-secondary); }

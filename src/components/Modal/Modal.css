@@ -1,0 +1,20 @@
+.cc-modal-backdrop {
+  position: fixed; inset: 0; z-index: 1000;
+  display: flex; align-items: center; justify-content: center;
+  padding: var(--cc-space-4);
+  background: rgba(26, 35, 50, 0.45);
+}
+.cc-modal {
+  width: 100%; max-height: 90vh; overflow: auto;
+  background: var(--cc-bg-elevated);
+  border-radius: var(--cc-radius-lg);
+  box-shadow: var(--cc-shadow-lg);
+}
+.cc-modal--sm { max-width: 400px; }
+.cc-modal--md { max-width: 520px; }
+.cc-modal--lg { max-width: 720px; }
+.cc-modal__header { display: flex; align-items: center; justify-content: space-between; padding: var(--cc-space-5); border-bottom: 1px solid var(--cc-border); }
+.cc-modal__title { margin: 0; font-size: var(--cc-text-lg); }
+.cc-modal__close { border: none; background: transparent; font-size: 1.5rem; cursor: pointer; color: var(--cc-text-muted); line-height: 1; }
+.cc-modal__body { padding: var(--cc-space-5); color: var(--cc-text-secondary); font-size: var(--cc-text-sm); }
+.cc-modal__footer { display: flex; justify-content: flex-end; gap: var(--cc-space-3); padding: var(--cc-space-4) var(--cc-space-5); border-top: 1px solid var(--cc-border); }

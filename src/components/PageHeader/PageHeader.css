@@ -1,0 +1,4 @@
+.cc-page-header { display: flex; align-items: flex-start; justify-content: space-between; gap: var(--cc-space-4); margin-bottom: var(--cc-space-6); }
+.cc-page-header__title { margin: var(--cc-space-2) 0 0; font-size: var(--cc-text-2xl); }
+.cc-page-header__subtitle { margin: var(--cc-space-1) 0 0; font-size: var(--cc-text-sm); color: var(--cc-text-secondary); }
+.cc-page-header__actions { display: flex; gap: var(--cc-space-2); flex-shrink: 0; }

@@ -1,0 +1,28 @@
+.cc-avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--cc-radius-full);
+  font-weight: 600;
+  color: white;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+.cc-avatar--sm {
+  width: 28px;
+  height: 28px;
+  font-size: 10px;
+}
+
+.cc-avatar--md {
+  width: 36px;
+  height: 36px;
+  font-size: var(--cc-text-xs);
+}
+
+.cc-avatar--lg {
+  width: 48px;
+  height: 48px;
+  font-size: var(--cc-text-sm);
+}

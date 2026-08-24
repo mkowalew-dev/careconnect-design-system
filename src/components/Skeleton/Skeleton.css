@@ -1,0 +1,9 @@
+.cc-skeleton {
+  background: linear-gradient(90deg, var(--cc-bg-muted) 25%, #e4eaef 50%, var(--cc-bg-muted) 75%);
+  background-size: 200% 100%;
+  animation: cc-shimmer 1.2s ease-in-out infinite;
+  border-radius: var(--cc-radius-sm);
+}
+.cc-skeleton--circle { border-radius: 50%; }
+.cc-skeleton-card { display: flex; gap: var(--cc-space-3); padding: var(--cc-space-4); border: 1px solid var(--cc-border); border-radius: var(--cc-radius-md); }
+@keyframes cc-shimmer { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }

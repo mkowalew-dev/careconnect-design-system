@@ -1,0 +1,7 @@
+.cc-breadcrumb__list { display: flex; flex-wrap: wrap; align-items: center; gap: var(--cc-space-2); list-style: none; margin: 0; padding: 0; }
+.cc-breadcrumb__item { display: flex; align-items: center; gap: var(--cc-space-2); font-size: var(--cc-text-sm); }
+.cc-breadcrumb__link { color: var(--cc-primary); text-decoration: none; }
+.cc-breadcrumb__link:hover { text-decoration: underline; }
+.cc-breadcrumb__text { color: var(--cc-text-muted); }
+.cc-breadcrumb__text--current { color: var(--cc-text); font-weight: 500; }
+.cc-breadcrumb__sep { color: var(--cc-text-muted); }

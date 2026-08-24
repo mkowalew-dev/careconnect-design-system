@@ -1,0 +1,11 @@
+.cc-spinner {
+  display: inline-block;
+  border: 2px solid var(--cc-border);
+  border-top-color: var(--cc-primary);
+  border-radius: 50%;
+  animation: cc-spin 0.7s linear infinite;
+}
+.cc-spinner--sm { width: 16px; height: 16px; }
+.cc-spinner--md { width: 24px; height: 24px; }
+.cc-spinner--lg { width: 36px; height: 36px; border-width: 3px; }
+@keyframes cc-spin { to { transform: rotate(360deg); } }

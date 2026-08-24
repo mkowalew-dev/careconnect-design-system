@@ -1,0 +1,20 @@
+.cc-schedule-calendar {
+  --fc-border-color: var(--cc-border);
+  --fc-button-bg-color: var(--cc-primary);
+  --fc-button-border-color: var(--cc-primary);
+  --fc-button-hover-bg-color: var(--cc-primary-dark);
+  --fc-button-hover-border-color: var(--cc-primary-dark);
+  --fc-button-active-bg-color: var(--cc-primary-dark);
+  --fc-today-bg-color: var(--cc-primary-subtle);
+  --fc-event-border-color: transparent;
+  font-family: var(--cc-font-body);
+  font-size: var(--cc-text-sm);
+  border: 1px solid var(--cc-border);
+  border-radius: var(--cc-radius-lg);
+  overflow: hidden;
+  padding: var(--cc-space-2);
+  background: var(--cc-bg-elevated);
+}
+
+.cc-schedule-calendar .fc-toolbar-title { font-size: var(--cc-text-lg); font-weight: 600; }
+.cc-schedule-calendar .fc-col-header-cell-cushion { color: var(--cc-text-secondary); font-weight: 600; }

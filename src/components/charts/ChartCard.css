@@ -1,0 +1,36 @@
+.cc-chart-card {
+  background: var(--cc-bg-elevated);
+  border: 1px solid var(--cc-border);
+  border-radius: var(--cc-radius-lg);
+  padding: var(--cc-space-5);
+  box-shadow: var(--cc-shadow-sm);
+}
+
+.cc-chart-card__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--cc-space-4);
+  margin-bottom: var(--cc-space-4);
+}
+
+.cc-chart-card__title {
+  margin: 0;
+  font-size: var(--cc-text-base);
+  font-weight: 600;
+  color: var(--cc-text);
+}
+
+.cc-chart-card__subtitle {
+  margin: var(--cc-space-1) 0 0;
+  font-size: var(--cc-text-sm);
+  color: var(--cc-text-muted);
+}
+
+.cc-chart-card__body {
+  width: 100%;
+}
+
+.cc-chart-card__body .recharts-responsive-container {
+  min-height: 0;
+}
