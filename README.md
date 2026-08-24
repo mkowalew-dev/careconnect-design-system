@@ -1,6 +1,6 @@
 # CareConnect Design System
 
-The shared UI component library for [CareConnect](https://github.com/mkowalew-dev/healthcare-demo) — a demo healthcare EMR/portal application. Built with React + TypeScript, documented with Storybook.
+The shared UI component library for CareConnect — a demo healthcare EMR/portal application. Built with React + TypeScript, documented with Storybook.
 
 ## Install
 

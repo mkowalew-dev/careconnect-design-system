@@ -20,11 +20,6 @@ const config: StorybookConfig = {
   },
   docs: {},
   staticDirs: ['../public'],
-  async viteFinal(config) {
-    const base = process.env.STORYBOOK_BASE || '/';
-    config.base = base;
-    return config;
-  },
 };
 
 export default config;

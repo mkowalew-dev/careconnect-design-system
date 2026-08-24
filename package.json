@@ -3,10 +3,10 @@
   "version": "0.2.0",
   "description": "CareConnect's shared UI component library",
   "license": "MIT",
+  "type": "module",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
-  "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
@@ -24,7 +24,8 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build -o storybook-static",
     "changeset": "changeset",
-    "version-packages": "changeset version"
+    "version-packages": "changeset version",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@fullcalendar/core": "^6.1.21",
