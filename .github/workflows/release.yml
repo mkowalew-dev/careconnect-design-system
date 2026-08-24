@@ -42,6 +42,7 @@ jobs:
           publish: npx changeset publish
           title: Version Packages
           commit: Release version packages
+          createGithubReleases: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
