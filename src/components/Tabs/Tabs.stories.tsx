@@ -48,3 +48,26 @@ export const Pills: Story = {
     );
   },
 };
+
+export const Hover: Story = {
+  render: () => {
+    const tabs = [
+      { id: 'prebooked', label: 'Prebooked', count: 3 },
+      { id: 'in-office', label: 'In Office', count: 4 },
+      { id: 'completed', label: 'Completed', count: 3 },
+    ];
+    return <Tabs tabs={tabs} activeTab="in-office" onChange={() => {}} />;
+  },
+  parameters: { pseudo: { hover: '.cc-tabs__tab' } },
+};
+
+export const Active: Story = {
+  render: () => {
+    const tabs = [
+      { id: 'prebooked', label: 'Prebooked', count: 3 },
+      { id: 'in-office', label: 'In Office', count: 4 },
+      { id: 'completed', label: 'Completed', count: 3 },
+    ];
+    return <Tabs tabs={tabs} activeTab="completed" onChange={() => {}} />;
+  },
+};

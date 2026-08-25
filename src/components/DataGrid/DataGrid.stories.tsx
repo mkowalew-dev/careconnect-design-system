@@ -67,3 +67,49 @@ export const ClaimsList: Story = {
     />
   ),
 };
+
+export const Hover: Story = {
+  render: () => (
+    <DataGrid<ClaimRow>
+      rows={claims}
+      rowKey={(r) => r.id}
+      onRowClick={() => {}}
+      columns={[
+        { id: 'id', header: 'Claim', accessor: (r) => r.id, sortValue: (r) => r.id },
+        { id: 'patient', header: 'Patient', accessor: (r) => r.patient, sortValue: (r) => r.patient },
+        { id: 'payer', header: 'Payer', accessor: (r) => r.payer, sortValue: (r) => r.payer },
+        {
+          id: 'status',
+          header: 'Status',
+          accessor: (r) => (
+            <Badge variant={r.status === 'paid' ? 'success' : r.status === 'denied' ? 'error' : 'info'}>
+              {r.status}
+            </Badge>
+          ),
+          sortValue: (r) => r.status,
+        },
+      ]}
+    />
+  ),
+  parameters: { pseudo: { hover: '.cc-data-grid__row--clickable' } },
+};
+
+export const Empty: Story = {
+  render: () => (
+    <DataGrid<ClaimRow>
+      rows={[]}
+      rowKey={(r) => r.id}
+      searchFilter={(row, q) =>
+        row.patient.toLowerCase().includes(q) ||
+        row.payer.toLowerCase().includes(q) ||
+        row.id.toLowerCase().includes(q)
+      }
+      searchPlaceholder="Search claims, patients, payers…"
+      columns={[
+        { id: 'id', header: 'Claim', accessor: (r) => r.id },
+        { id: 'patient', header: 'Patient', accessor: (r) => r.patient },
+        { id: 'payer', header: 'Payer', accessor: (r) => r.payer },
+      ]}
+    />
+  ),
+};

@@ -18,3 +18,7 @@ export const AllVariants: Story = {
     </div>
   ),
 };
+
+export const Error: Story = {
+  args: { label: 'Insurance verification', value: 15, variant: 'error', showValue: true },
+};

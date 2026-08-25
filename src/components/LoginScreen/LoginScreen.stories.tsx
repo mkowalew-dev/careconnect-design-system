@@ -116,3 +116,7 @@ export const Billing: Story = {
 export const WithError: Story = {
   render: () => <LoginScreenDemo error="Invalid username or password" />,
 };
+
+export const Loading: Story = {
+  render: () => <LoginScreenDemo loading />,
+};

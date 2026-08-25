@@ -7,3 +7,12 @@ type Story = StoryObj<typeof Switch>;
 
 export const Default: Story = { args: { label: 'Telemed visit' } };
 export const Checked: Story = { args: { label: 'Auto-check eligibility', defaultChecked: true } };
+
+export const Focus: Story = {
+  args: { label: 'Telemed visit' },
+  parameters: { pseudo: { focusVisible: '.cc-switch__input' } },
+};
+
+export const Disabled: Story = {
+  args: { label: 'Telemed visit', disabled: true },
+};

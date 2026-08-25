@@ -12,3 +12,11 @@ export const ClaimsList: Story = {
     return <Pagination page={page} totalPages={8} onPageChange={setPage} />;
   },
 };
+
+export const Disabled: Story = {
+  render: () => <Pagination page={1} totalPages={8} onPageChange={() => {}} />,
+};
+
+export const Active: Story = {
+  render: () => <Pagination page={4} totalPages={8} onPageChange={() => {}} />,
+};

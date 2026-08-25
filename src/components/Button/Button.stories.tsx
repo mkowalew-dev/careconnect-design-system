@@ -44,6 +44,15 @@ export const Loading: Story = {
   args: { children: 'Saving...', loading: true },
 };
 
+export const Hover: Story = {
+  args: { children: 'Check In Patient', variant: 'primary' },
+  parameters: { pseudo: { hover: true } },
+};
+
+export const Disabled: Story = {
+  args: { children: 'Check In Patient', disabled: true },
+};
+
 export const AllVariants: Story = {
   render: () => (
     <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', alignItems: 'center' }}>

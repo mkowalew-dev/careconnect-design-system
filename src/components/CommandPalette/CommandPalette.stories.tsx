@@ -23,3 +23,52 @@ export const Default: Story = {
     );
   },
 };
+
+export const Hover: Story = {
+  render: () => (
+    <CommandPalette
+      open
+      onClose={() => {}}
+      items={sampleCommandItems}
+      footer="↑↓ navigate · Enter select · Esc close"
+    />
+  ),
+  parameters: { pseudo: { hover: '.cc-command-palette__item' } },
+};
+
+// CommandPalette's :focus pseudo-class rule (see CommandPalette.css) only suppresses
+// the browser's default outline and adds no visible focus treatment, so this story
+// renders identically to Active below — it documents the focused-input state.
+export const Focus: Story = {
+  render: () => (
+    <CommandPalette
+      open
+      onClose={() => {}}
+      items={sampleCommandItems}
+      footer="↑↓ navigate · Enter select · Esc close"
+    />
+  ),
+  parameters: { pseudo: { focus: '.cc-command-palette__input' } },
+};
+
+export const Active: Story = {
+  render: () => (
+    <CommandPalette
+      open
+      onClose={() => {}}
+      items={sampleCommandItems}
+      footer="↑↓ navigate · Enter select · Esc close"
+    />
+  ),
+};
+
+export const Empty: Story = {
+  render: () => (
+    <CommandPalette
+      open
+      onClose={() => {}}
+      items={[]}
+      footer="↑↓ navigate · Enter select · Esc close"
+    />
+  ),
+};

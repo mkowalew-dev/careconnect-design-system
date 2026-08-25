@@ -28,3 +28,7 @@ export const AllVariants: Story = {
     </div>
   ),
 };
+
+export const Error: Story = {
+  args: { variant: 'error', title: 'Critical allergy', children: 'Documented penicillin anaphylaxis.' },
+};

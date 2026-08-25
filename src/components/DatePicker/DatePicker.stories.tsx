@@ -14,3 +14,16 @@ export const DateRange: Story = {
     return <DateRangePicker label="Tracking board range" value={range} onChange={setRange} />;
   },
 };
+
+export const Focus: Story = {
+  args: { label: 'Appointment date', defaultValue: '2026-08-21' },
+  parameters: { pseudo: { focus: '.cc-date-picker__input' } },
+};
+
+export const Disabled: Story = {
+  args: { label: 'Appointment date', defaultValue: '2026-08-21', disabled: true },
+};
+
+export const Error: Story = {
+  args: { label: 'Appointment date', error: 'Date must be within the next 90 days' },
+};

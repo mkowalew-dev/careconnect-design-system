@@ -13,3 +13,21 @@ export const StatusHint: Story = {
     </Tooltip>
   ),
 };
+
+export const Hover: Story = {
+  render: () => (
+    <Tooltip content="Patient arrived and vitals collected">
+      <Badge variant="in-office" dot>In Office</Badge>
+    </Tooltip>
+  ),
+  parameters: { pseudo: { hover: '.cc-tooltip' } },
+};
+
+export const Focus: Story = {
+  render: () => (
+    <Tooltip content="Patient arrived and vitals collected">
+      <Badge variant="in-office" dot>In Office</Badge>
+    </Tooltip>
+  ),
+  parameters: { pseudo: { focusWithin: '.cc-tooltip' } },
+};
