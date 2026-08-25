@@ -30,3 +30,12 @@ export const SelectField: Story = {
     />
   ),
 };
+
+export const Focus: Story = {
+  args: { label: 'Patient Name', placeholder: 'Search patients...' },
+  parameters: { pseudo: { focusWithin: '.cc-input__container' } },
+};
+
+export const Disabled: Story = {
+  args: { label: 'Patient Name', placeholder: 'Search patients...', disabled: true },
+};
