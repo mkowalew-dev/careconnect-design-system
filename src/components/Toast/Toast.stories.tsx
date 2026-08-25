@@ -14,6 +14,10 @@ function ToastDemo() {
   );
 }
 
+// Toast stories use click-triggered rendering (not auto-mount) because useEffect-based
+// auto-push was attempted but its state update never commits to the DOM in this project's
+// Storybook build — likely due to @storybook/addon-vitest's browser mocker interfering
+// with React state updates from non-click-triggered sources.
 function ToastTrigger({ variant, message }: { variant: ToastVariant; message: string }) {
   const { push } = useToast();
   return <Button onClick={() => push(message, variant)}>Show toast</Button>;
