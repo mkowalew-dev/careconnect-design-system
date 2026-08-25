@@ -38,7 +38,7 @@ export const Hover: Story = {
 
 // CommandPalette's :focus pseudo-class rule (see CommandPalette.css) only suppresses
 // the browser's default outline and adds no visible focus treatment, so this story
-// renders identically to Active above — it documents the focused-input state.
+// renders identically to Active below — it documents the focused-input state.
 export const Focus: Story = {
   render: () => (
     <CommandPalette
