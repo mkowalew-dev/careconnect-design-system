@@ -1,5 +1,11 @@
 # @mkowalew-dev/careconnect-design-system
 
+## 0.3.0
+
+### Minor Changes
+
+- 3705c81: Add `appVersion` and `designSystemVersion` props to `LoginScreen`, rendered as a small footer line when provided. Also export a `DESIGN_SYSTEM_VERSION` constant from the package root so consumers don't need to hardcode the design system's own version.
+
 ## 0.2.2
 
 ### Patch Changes
