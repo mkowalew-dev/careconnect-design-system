@@ -1,0 +1,176 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`renders StatCard with sparkline 1`] = `
+<div>
+  <div
+    class="cc-stat-card"
+  >
+    <div
+      class="cc-stat-card__header"
+    >
+      <span
+        class="cc-stat-card__label"
+      >
+        Patients in queue
+      </span>
+    </div>
+    <div
+      class="cc-stat-card__value"
+    >
+      14
+    </div>
+    <div
+      class="cc-stat-card__delta cc-stat-card__delta--up"
+    >
+      +3 vs yesterday
+    </div>
+    <div
+      class="cc-stat-card__sparkline"
+    >
+      <div
+        class="recharts-responsive-container"
+        style="width: 100%; height: 100%; min-width: 0px;"
+      >
+        <div
+          style="width: 0px; height: 0px; overflow: visible;"
+        >
+          <div
+            class="recharts-wrapper"
+            height="180"
+            style="position: relative; cursor: default; width: 320px; height: 180px;"
+            width="320"
+          >
+            <svg
+              class="recharts-surface"
+              height="180"
+              role="application"
+              style="width: 100%; height: 100%; display: block;"
+              tabindex="0"
+              viewBox="0 0 320 180"
+              width="320"
+            >
+              <title />
+              <desc />
+              <g
+                class="recharts-zIndex-layer_-100"
+                tabindex="-1"
+              />
+              <g
+                class="recharts-zIndex-layer_-50"
+                tabindex="-1"
+              />
+              <defs>
+                <clippath
+                  id="recharts1-clip"
+                >
+                  <rect
+                    height="170"
+                    width="310"
+                    x="5"
+                    y="5"
+                  />
+                </clippath>
+              </defs>
+              <g
+                class="recharts-zIndex-layer_100"
+                tabindex="-1"
+              >
+                <g
+                  class="recharts-layer recharts-area"
+                >
+                  <g
+                    class="recharts-layer"
+                  >
+                    <g
+                      class="recharts-layer recharts-shape"
+                    >
+                      <g
+                        class="recharts-layer"
+                      >
+                        <defs>
+                          <clippath
+                            id=":r1:"
+                          >
+                            <rect
+                              height="177"
+                              width="0"
+                              x="5"
+                              y="0"
+                            />
+                          </clippath>
+                        </defs>
+                        <g
+                          class="recharts-layer"
+                          clip-path="url(#:r1:)"
+                        >
+                          <path
+                            class="recharts-curve recharts-area-area"
+                            d="M5,73C22.22222222222222,60.25,39.44444444444444,47.5,56.666666666666664,47.5C73.88888888888889,47.5,91.11111111111111,81.49999999999999,108.33333333333333,81.49999999999999C125.55555555555556,81.49999999999999,142.77777777777777,21.999999999999996,160,21.999999999999996C177.22222222222223,21.999999999999996,194.44444444444443,56.00000000000001,211.66666666666666,56.00000000000001C228.88888888888889,56.00000000000001,246.1111111111111,38.99999999999999,263.3333333333333,38.99999999999999C280.55555555555554,38.99999999999999,297.77777777777777,51.74999999999999,315,64.5L315,175C297.77777777777777,175,280.55555555555554,175,263.3333333333333,175C246.1111111111111,175,228.88888888888889,175,211.66666666666666,175C194.44444444444443,175,177.22222222222223,175,160,175C142.77777777777777,175,125.55555555555556,175,108.33333333333333,175C91.11111111111111,175,73.88888888888889,175,56.666666666666664,175C39.44444444444444,175,22.22222222222222,175,5,175Z"
+                            fill="#0D7377"
+                            fill-opacity="0.12"
+                            height="170"
+                            id="recharts-area-:r0:"
+                            stroke="none"
+                            stroke-width="2"
+                            width="310"
+                          />
+                          <path
+                            class="recharts-curve recharts-area-curve"
+                            d="M5,73C22.22222222222222,60.25,39.44444444444444,47.5,56.666666666666664,47.5C73.88888888888889,47.5,91.11111111111111,81.49999999999999,108.33333333333333,81.49999999999999C125.55555555555556,81.49999999999999,142.77777777777777,21.999999999999996,160,21.999999999999996C177.22222222222223,21.999999999999996,194.44444444444443,56.00000000000001,211.66666666666666,56.00000000000001C228.88888888888889,56.00000000000001,246.1111111111111,38.99999999999999,263.3333333333333,38.99999999999999C280.55555555555554,38.99999999999999,297.77777777777777,51.74999999999999,315,64.5"
+                            fill="none"
+                            fill-opacity="0.12"
+                            height="170"
+                            stroke="#0D7377"
+                            stroke-width="2"
+                            width="310"
+                          />
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+              <g
+                class="recharts-zIndex-layer_200"
+                tabindex="-1"
+              />
+              <g
+                class="recharts-zIndex-layer_300"
+                tabindex="-1"
+              />
+              <g
+                class="recharts-zIndex-layer_400"
+                tabindex="-1"
+              />
+              <g
+                class="recharts-zIndex-layer_500"
+                tabindex="-1"
+              />
+              <g
+                class="recharts-zIndex-layer_600"
+                tabindex="-1"
+              />
+              <g
+                class="recharts-zIndex-layer_1000"
+                tabindex="-1"
+              />
+              <g
+                class="recharts-zIndex-layer_1100"
+                tabindex="-1"
+              />
+              <g
+                class="recharts-zIndex-layer_1200"
+                tabindex="-1"
+              />
+              <g
+                class="recharts-zIndex-layer_2000"
+                tabindex="-1"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
