@@ -34,6 +34,8 @@ export interface LoginScreenProps {
   submitLabel?: string;
   className?: string;
   logo?: ReactNode;
+  appVersion?: string;
+  designSystemVersion?: string;
 }
 
 function CareConnectMark() {
@@ -71,7 +73,13 @@ export function LoginScreen({
   submitLabel = 'Sign In',
   className,
   logo,
+  appVersion,
+  designSystemVersion,
 }: LoginScreenProps) {
+  const versionParts = [
+    appVersion && `v${appVersion}`,
+    designSystemVersion && `Design System v${designSystemVersion}`,
+  ].filter(Boolean);
   return (
     <div className={clsx('cc-login-screen', className)}>
       <aside className="cc-login-screen__brand" aria-label={`${productName} overview`}>
@@ -163,6 +171,9 @@ export function LoginScreen({
 
           {demoHint && <p className="cc-login-screen__demo-hint">Demo: {demoHint}</p>}
           {footerNote && <p className="cc-login-screen__footer-note">{footerNote}</p>}
+          {versionParts.length > 0 && (
+            <p className="cc-login-screen__version">{versionParts.join(' · ')}</p>
+          )}
         </div>
       </main>
     </div>

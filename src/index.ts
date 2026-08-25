@@ -1,5 +1,7 @@
 import './styles/global.css';
 
+export const DESIGN_SYSTEM_VERSION = __DESIGN_SYSTEM_VERSION__;
+
 export * from './components/Button';
 export * from './components/Badge';
 export * from './components/Card';
