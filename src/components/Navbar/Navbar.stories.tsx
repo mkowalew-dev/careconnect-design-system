@@ -33,3 +33,38 @@ export const EHRNavigation: Story = {
     );
   },
 };
+
+export const Hover: Story = {
+  render: () => (
+    <Navbar
+      logo={<CareConnectLogo />}
+      domain="se-tools.net"
+      items={[
+        { id: 'tracking-board', label: 'Tracking Board' },
+        { id: 'patients', label: 'Patients' },
+        { id: 'admin', label: 'Admin' },
+      ]}
+      activeItem="tracking-board"
+      onNavigate={() => {}}
+      userMenu={<Avatar name="Dr. Sarah Chen" size="sm" />}
+    />
+  ),
+  parameters: { pseudo: { hover: '.cc-navbar__link' } },
+};
+
+export const Active: Story = {
+  render: () => (
+    <Navbar
+      logo={<CareConnectLogo />}
+      domain="se-tools.net"
+      items={[
+        { id: 'tracking-board', label: 'Tracking Board' },
+        { id: 'patients', label: 'Patients' },
+        { id: 'admin', label: 'Admin' },
+      ]}
+      activeItem="patients"
+      onNavigate={() => {}}
+      userMenu={<Avatar name="Dr. Sarah Chen" size="sm" />}
+    />
+  ),
+};
