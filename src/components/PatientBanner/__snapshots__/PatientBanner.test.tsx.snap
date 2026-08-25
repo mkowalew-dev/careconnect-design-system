@@ -1,0 +1,60 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`renders PatientBanner 1`] = `
+<div>
+  <div
+    class="cc-patient-banner"
+  >
+    <span
+      aria-label="Jane Doe"
+      class="cc-avatar cc-avatar--lg"
+      style="background: rgb(13, 115, 119);"
+    >
+      JD
+    </span>
+    <div
+      class="cc-patient-banner__info"
+    >
+      <div
+        class="cc-patient-banner__row"
+      >
+        <h2
+          class="cc-patient-banner__name"
+        >
+          Jane Doe
+        </h2>
+        <span
+          class="cc-badge cc-badge--in-office"
+        >
+          <span
+            aria-hidden="true"
+            class="cc-badge__dot"
+          />
+          in office
+        </span>
+      </div>
+      <p
+        class="cc-patient-banner__meta"
+      >
+        MRN 
+        MRN-10234
+         · DOB 
+        1985-04-12
+         (
+        41
+        y) · 
+        F
+      </p>
+      <div
+        class="cc-patient-banner__alerts"
+      >
+        <span
+          class="cc-patient-banner__alert"
+        >
+          Penicillin allergy
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;

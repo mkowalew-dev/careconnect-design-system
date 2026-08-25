@@ -35,10 +35,21 @@ export default defineConfig({
       ],
     },
   },
-  // Storybook Vitest integration — runs stories as tests.
-  // See: https://storybook.js.org/docs/next/writing-tests/integrations/vitest-addon
   test: {
+    reporters: ['default', 'junit'],
+    outputFile: './test-results/junit.xml',
     projects: [
+      {
+        extends: true,
+        test: {
+          name: 'unit',
+          environment: 'jsdom',
+          setupFiles: ['./vitest.setup.ts'],
+          include: ['src/**/*.test.{ts,tsx}'],
+        },
+      },
+      // Storybook Vitest integration — runs stories as tests.
+      // See: https://storybook.js.org/docs/next/writing-tests/integrations/vitest-addon
       {
         extends: true,
         plugins: [
