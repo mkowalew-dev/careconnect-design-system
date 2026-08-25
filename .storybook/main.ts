@@ -13,6 +13,10 @@ const config: StorybookConfig = {
     getAbsolutePath('@storybook/addon-links'),
     getAbsolutePath('@storybook/addon-a11y'),
     getAbsolutePath('@storybook/addon-mcp'),
+    getAbsolutePath('storybook-addon-pseudo-states'),
+    getAbsolutePath("@storybook/addon-themes"),
+    getAbsolutePath("@chromatic-com/storybook"),
+    getAbsolutePath("@storybook/addon-vitest")
   ],
   framework: {
     name: getAbsolutePath('@storybook/react-vite'),
