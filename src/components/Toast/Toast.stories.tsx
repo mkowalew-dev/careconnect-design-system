@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import type { Meta, StoryObj } from '@storybook/react-vite';
 import { Button } from '../Button';
 import { ToastProvider, useToast, type ToastVariant } from './Toast';
@@ -15,12 +14,9 @@ function ToastDemo() {
   );
 }
 
-function ToastAutoDemo({ variant, message }: { variant: ToastVariant; message: string }) {
+function ToastTrigger({ variant, message }: { variant: ToastVariant; message: string }) {
   const { push } = useToast();
-  useEffect(() => {
-    push(message, variant);
-  }, [message, variant, push]);
-  return null;
+  return <Button onClick={() => push(message, variant)}>Show toast</Button>;
 }
 
 const meta: Meta = { title: 'Components/Toast', tags: ['autodocs'], decorators: [(Story) => <ToastProvider><Story /></ToastProvider>] };
@@ -30,9 +26,9 @@ type Story = StoryObj;
 export const Interactive: Story = { render: () => <ToastDemo /> };
 
 export const Default: Story = {
-  render: () => <ToastAutoDemo variant="info" message="Lab result filed" />,
+  render: () => <ToastTrigger variant="info" message="Lab result filed" />,
 };
 
 export const Error: Story = {
-  render: () => <ToastAutoDemo variant="error" message="Claim rejected" />,
+  render: () => <ToastTrigger variant="error" message="Claim rejected" />,
 };
