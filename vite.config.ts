@@ -7,6 +7,9 @@ import pkg from './package.json' with { type: 'json' };
 const externalDeps = Object.keys(pkg.dependencies ?? {});
 
 export default defineConfig({
+  define: {
+    __DESIGN_SYSTEM_VERSION__: JSON.stringify(pkg.version),
+  },
   plugins: [
     react(),
     dts({ include: ['src'], exclude: ['src/**/*.stories.tsx'], rollupTypes: false }),

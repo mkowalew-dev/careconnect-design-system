@@ -2,6 +2,7 @@ import type { ComponentProps } from 'react';
 import type { Meta, StoryObj } from '@storybook/react-vite';
 import { useState } from 'react';
 import { LoginScreen } from './LoginScreen';
+import { DESIGN_SYSTEM_VERSION } from '../..';
 
 const meta: Meta<typeof LoginScreen> = {
   title: 'Components/LoginScreen',
@@ -65,6 +66,8 @@ export const Portal: Story = {
       email="demo.user@example.com"
       formSubtitle="Patient Portal"
       demoHint="demo.user@example.com / SampleDemoPass1!"
+      appVersion="1.0.0"
+      designSystemVersion={DESIGN_SYSTEM_VERSION}
     />
   ),
 };
@@ -84,6 +87,8 @@ export const EHR: Story = {
       formSubtitle="Staff Sign In"
       email="demo.user@example.com"
       demoHint="demo.user@example.com / SampleDemoPass1!"
+      appVersion="1.0.0"
+      designSystemVersion={DESIGN_SYSTEM_VERSION}
     />
   ),
 };
