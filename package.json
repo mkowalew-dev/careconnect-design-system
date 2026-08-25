@@ -1,6 +1,6 @@
 {
   "name": "@mkowalew-dev/careconnect-design-system",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "CareConnect's shared UI component library",
   "license": "MIT",
   "type": "module",

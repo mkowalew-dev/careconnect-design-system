@@ -1,5 +1,11 @@
 # @mkowalew-dev/careconnect-design-system
 
+## 0.3.1
+
+### Patch Changes
+
+- 4ccb63e: Update `--cc-text-sm` typography token (0.875rem → 1.375rem), affecting small text sizing across components that consume it.
+
 ## 0.3.0
 
 ### Minor Changes
