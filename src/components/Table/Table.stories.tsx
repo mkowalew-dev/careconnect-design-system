@@ -56,3 +56,27 @@ export const Empty: Story = {
     />
   ),
 };
+
+export const Hover: Story = {
+  render: () => (
+    <Table>
+      <TableHead>
+        <TableRow>
+          <TableHeader>Patient</TableHeader>
+          <TableHeader>Time</TableHeader>
+          <TableHeader>Status</TableHeader>
+        </TableRow>
+      </TableHead>
+      <TableBody>
+        {patients.map((p) => (
+          <TableRow key={p.name} clickable>
+            <TableCell><strong>{p.name}</strong></TableCell>
+            <TableCell>{p.time}</TableCell>
+            <TableCell><Badge variant={p.status} dot>{p.status.replace('-', ' ')}</Badge></TableCell>
+          </TableRow>
+        ))}
+      </TableBody>
+    </Table>
+  ),
+  parameters: { pseudo: { hover: '.cc-table__row--clickable' } },
+};
