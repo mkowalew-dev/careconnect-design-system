@@ -45,22 +45,30 @@
   },
   "devDependencies": {
     "@changesets/cli": "^3.0.1",
+    "@chromatic-com/storybook": "^5.3.0",
     "@storybook/addon-a11y": "^10.5.10",
     "@storybook/addon-docs": "^10.5.10",
     "@storybook/addon-links": "^10.5.10",
     "@storybook/addon-mcp": "^0.7.0",
+    "@storybook/addon-themes": "^10.5.10",
+    "@storybook/addon-vitest": "^10.5.10",
     "@storybook/react": "^10.5.10",
     "@storybook/react-vite": "^10.5.10",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "@vitejs/plugin-react": "^4.7.0",
+    "@vitest/browser-playwright": "^4.1.11",
+    "@vitest/coverage-v8": "^4.1.11",
     "chromatic": "^18.5.0",
+    "playwright": "^1.62.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "storybook": "^10.5.10",
+    "storybook-addon-pseudo-states": "^10.5.10",
     "typescript": "^5.9.3",
     "vite": "^6.4.3",
-    "vite-plugin-dts": "^5.0.3"
+    "vite-plugin-dts": "^5.0.3",
+    "vitest": "^4.1.11"
   },
   "engines": {
     "node": ">=20.0.0"
