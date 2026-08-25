@@ -15,3 +15,15 @@ export const EncounterNav: Story = {
     ],
   },
 };
+
+export const Hover: Story = {
+  args: {
+    items: [
+      { label: 'Schedule', href: '#' },
+      { label: 'Queue', href: '#' },
+      { label: 'Encounter', href: '#' },
+      { label: 'Alice Smith' },
+    ],
+  },
+  parameters: { pseudo: { hover: '.cc-breadcrumb__link' } },
+};
