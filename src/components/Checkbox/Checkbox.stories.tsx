@@ -21,6 +21,11 @@ export const WithDescription: Story = {
   },
 };
 
+export const Focus: Story = {
+  args: { label: 'Send appointment reminder SMS' },
+  parameters: { pseudo: { focusVisible: '.cc-checkbox__input' } },
+};
+
 export const AllVariants: Story = {
   render: () => (
     <div style={{ display: 'flex', flexDirection: 'column', gap: 12, maxWidth: 360 }}>
