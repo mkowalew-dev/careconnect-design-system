@@ -9,3 +9,9 @@ test('renders StatCard with sparkline', () => {
 
   expect(container).toMatchSnapshot();
 });
+
+test('renders StatCard with only the required props', () => {
+  const { container } = render(<StatCard label="Patients Seen" value={128} />);
+
+  expect(container).toMatchSnapshot();
+});
