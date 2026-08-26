@@ -58,3 +58,126 @@ exports[`renders PatientBanner 1`] = `
   </div>
 </div>
 `;
+
+exports[`renders PatientBanner with multiple alerts and actions 1`] = `
+<div>
+  <div
+    class="cc-patient-banner"
+  >
+    <span
+      aria-label="Sam Rivera"
+      class="cc-avatar cc-avatar--lg"
+      style="background: rgb(13, 115, 119);"
+    >
+      SR
+    </span>
+    <div
+      class="cc-patient-banner__info"
+    >
+      <div
+        class="cc-patient-banner__row"
+      >
+        <h2
+          class="cc-patient-banner__name"
+        >
+          Sam Rivera
+        </h2>
+        <span
+          class="cc-badge cc-badge--completed"
+        >
+          <span
+            aria-hidden="true"
+            class="cc-badge__dot"
+          />
+          completed
+        </span>
+      </div>
+      <p
+        class="cc-patient-banner__meta"
+      >
+        MRN 
+        MRN-77410
+         · DOB 
+        1990-09-02
+         (
+        35
+        y) · 
+        M
+      </p>
+      <div
+        class="cc-patient-banner__alerts"
+      >
+        <span
+          class="cc-patient-banner__alert"
+        >
+          Penicillin allergy
+        </span>
+        <span
+          class="cc-patient-banner__alert"
+        >
+          Fall risk
+        </span>
+      </div>
+    </div>
+    <div
+      class="cc-patient-banner__actions"
+    >
+      <button
+        type="button"
+      >
+        Check in
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders PatientBanner with only the required props 1`] = `
+<div>
+  <div
+    class="cc-patient-banner"
+  >
+    <span
+      aria-label="Jordan Ellis"
+      class="cc-avatar cc-avatar--lg"
+      style="background: rgb(69, 123, 157);"
+    >
+      JE
+    </span>
+    <div
+      class="cc-patient-banner__info"
+    >
+      <div
+        class="cc-patient-banner__row"
+      >
+        <h2
+          class="cc-patient-banner__name"
+        >
+          Jordan Ellis
+        </h2>
+        <span
+          class="cc-badge cc-badge--in-office"
+        >
+          <span
+            aria-hidden="true"
+            class="cc-badge__dot"
+          />
+          in office
+        </span>
+      </div>
+      <p
+        class="cc-patient-banner__meta"
+      >
+        MRN 
+        MRN-10293
+         · DOB 
+        1985-04-12
+         (
+        41
+        y) · 
+        F
+      </p>
+    </div>
+  </div>
+</div>
+`;

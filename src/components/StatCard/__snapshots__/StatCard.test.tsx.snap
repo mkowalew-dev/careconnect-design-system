@@ -1,5 +1,28 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
+exports[`renders StatCard with only the required props 1`] = `
+<div>
+  <div
+    class="cc-stat-card"
+  >
+    <div
+      class="cc-stat-card__header"
+    >
+      <span
+        class="cc-stat-card__label"
+      >
+        Patients Seen
+      </span>
+    </div>
+    <div
+      class="cc-stat-card__value"
+    >
+      128
+    </div>
+  </div>
+</div>
+`;
+
 exports[`renders StatCard with sparkline 1`] = `
 <div>
   <div
