@@ -1,0 +1,73 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`StatCard > matches DOM snapshot with default props 1`] = `
+<div>
+  <div
+    class="cc-stat-card"
+  >
+    <div
+      class="cc-stat-card__header"
+    >
+      <span
+        class="cc-stat-card__label"
+      >
+        Patients Seen
+      </span>
+    </div>
+    <div
+      class="cc-stat-card__value"
+    >
+      128
+    </div>
+  </div>
+</div>
+`;
+
+exports[`StatCard > matches DOM snapshot with delta, icon, and sparkline 1`] = `
+<div>
+  <div
+    class="cc-stat-card"
+  >
+    <div
+      class="cc-stat-card__header"
+    >
+      <span
+        class="cc-stat-card__label"
+      >
+        Avg Wait Time
+      </span>
+      <span
+        class="cc-stat-card__icon"
+      >
+        <span
+          aria-hidden="true"
+        >
+          ⏱
+        </span>
+      </span>
+    </div>
+    <div
+      class="cc-stat-card__value"
+    >
+      14 min
+    </div>
+    <div
+      class="cc-stat-card__delta cc-stat-card__delta--down"
+    >
+      -3 min
+    </div>
+    <div
+      class="cc-stat-card__sparkline"
+    >
+      <div
+        class="recharts-responsive-container"
+        style="width: 100%; height: 100%; min-width: 0px;"
+      >
+        <div
+          style="width: 0px; height: 0px; overflow: visible;"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

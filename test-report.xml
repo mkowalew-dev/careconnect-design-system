@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites name="vitest tests" tests="4" failures="0" errors="0" time="0.050966">
+    <testsuite name="src/components/PatientBanner/PatientBanner.test.tsx" timestamp="2026-08-26T17:22:45.946Z" hostname="mkowalew-win11" tests="2" failures="0" errors="0" skipped="0" time="0.032654">
+        <testcase classname="src/components/PatientBanner/PatientBanner.test.tsx" name="PatientBanner &gt; matches DOM snapshot with required props" time="0.0256608">
+        </testcase>
+        <testcase classname="src/components/PatientBanner/PatientBanner.test.tsx" name="PatientBanner &gt; matches DOM snapshot with status, alerts, and actions" time="0.0054776">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/components/StatCard/StatCard.test.tsx" timestamp="2026-08-26T17:22:45.948Z" hostname="mkowalew-win11" tests="2" failures="0" errors="0" skipped="0" time="0.018312">
+        <testcase classname="src/components/StatCard/StatCard.test.tsx" name="StatCard &gt; matches DOM snapshot with default props" time="0.0097456">
+        </testcase>
+        <testcase classname="src/components/StatCard/StatCard.test.tsx" name="StatCard &gt; matches DOM snapshot with delta, icon, and sparkline" time="0.0071267">
+        </testcase>
+    </testsuite>
+</testsuites>

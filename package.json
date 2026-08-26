@@ -26,7 +26,8 @@
     "changeset": "changeset",
     "version-packages": "changeset version",
     "typecheck": "tsc --noEmit",
-    "chromatic": "npx chromatic --project-token=chpt_38ec30a04cfe218"
+    "test": "vitest run",
+    "chromatic": "npx chromatic --project-token=chpt_7484a0975aa75ef"
   },
   "dependencies": {
     "@fullcalendar/core": "^6.1.21",
@@ -52,17 +53,20 @@
     "@storybook/addon-mcp": "^0.7.0",
     "@storybook/react": "^10.5.10",
     "@storybook/react-vite": "^10.5.10",
+    "@testing-library/react": "^16.3.2",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "@vitejs/plugin-react": "^4.7.0",
     "chromatic": "^18.6.0",
+    "jsdom": "^30.0.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "storybook": "^10.5.10",
     "storybook-addon-pseudo-states": "^10.5.10",
     "typescript": "^5.9.3",
     "vite": "^6.4.3",
-    "vite-plugin-dts": "^5.0.3"
+    "vite-plugin-dts": "^5.0.3",
+    "vitest": "^4.1.11"
   },
   "engines": {
     "node": ">=20.0.0"
