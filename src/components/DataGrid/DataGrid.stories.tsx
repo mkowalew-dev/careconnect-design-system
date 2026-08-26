@@ -67,3 +67,19 @@ export const ClaimsList: Story = {
     />
   ),
 };
+
+export const Empty: Story = {
+  render: () => (
+    <DataGrid<ClaimRow>
+      rows={[]}
+      rowKey={(r) => r.id}
+      emptyMessage="No claims match your filters."
+      columns={[
+        { id: 'id', header: 'Claim', accessor: (r) => r.id },
+        { id: 'patient', header: 'Patient', accessor: (r) => r.patient },
+        { id: 'payer', header: 'Payer', accessor: (r) => r.payer },
+        { id: 'amount', header: 'Amount', accessor: (r) => `$${r.amount.toFixed(2)}` },
+      ]}
+    />
+  ),
+};

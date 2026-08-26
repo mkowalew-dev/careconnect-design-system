@@ -7,3 +7,4 @@ type Story = StoryObj<typeof Switch>;
 
 export const Default: Story = { args: { label: 'Telemed visit' } };
 export const Checked: Story = { args: { label: 'Auto-check eligibility', defaultChecked: true } };
+export const Disabled: Story = { args: { label: 'Requires admin access', disabled: true } };

@@ -48,6 +48,12 @@
   border: none;
   outline: none;
   min-width: 0;
+  text-overflow: ellipsis;
+}
+
+.cc-input:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
 .cc-input__container .cc-input {

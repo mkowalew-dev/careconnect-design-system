@@ -13,6 +13,7 @@ const config: StorybookConfig = {
     getAbsolutePath('@storybook/addon-links'),
     getAbsolutePath('@storybook/addon-a11y'),
     getAbsolutePath('@storybook/addon-mcp'),
+    getAbsolutePath('storybook-addon-pseudo-states'),
   ],
   framework: {
     name: getAbsolutePath('@storybook/react-vite'),

@@ -21,6 +21,10 @@ export const WithDescription: Story = {
   },
 };
 
+export const Disabled: Story = {
+  args: { label: 'Requires supervisor approval', disabled: true },
+};
+
 export const AllVariants: Story = {
   render: () => (
     <div style={{ display: 'flex', flexDirection: 'column', gap: 12, maxWidth: 360 }}>

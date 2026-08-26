@@ -23,3 +23,21 @@ export const ActiveEncounter: Story = {
     ),
   },
 };
+
+export const NoAlerts: Story = {
+  args: {
+    name: 'Bob Johnson',
+    mrn: 'MRN-10501',
+    dob: '07/22/1990',
+    age: 36,
+    sex: 'Male',
+    status: 'in-office',
+    alerts: [],
+    actions: (
+      <>
+        <Button variant="secondary" size="sm">Message</Button>
+        <Button size="sm">Open encounter</Button>
+      </>
+    ),
+  },
+};

@@ -15,6 +15,7 @@ export const AllVariants: Story = {
       <Progress label="Rooming" value={100} variant="success" showValue />
       <Progress label="Orders placed" value={45} variant="primary" showValue />
       <Progress label="Prior auth" value={20} variant="warning" showValue />
+      <Progress label="Insurance verification" value={35} variant="error" showValue />
     </div>
   ),
 };

@@ -23,3 +23,20 @@ export const Default: Story = {
     );
   },
 };
+
+export const Empty: Story = {
+  render: () => {
+    const [open, setOpen] = useState(true);
+    return (
+      <>
+        <Button onClick={() => setOpen(true)}>Open command palette (⌘K)</Button>
+        <CommandPalette
+          open={open}
+          onClose={() => setOpen(false)}
+          items={[]}
+          footer="↑↓ navigate · Enter select · Esc close"
+        />
+      </>
+    );
+  },
+};

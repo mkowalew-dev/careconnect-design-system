@@ -8,6 +8,14 @@ type Story = StoryObj<typeof DatePicker>;
 
 export const SingleDate: Story = { args: { label: 'Appointment date', defaultValue: '2026-08-21' } };
 
+export const WithError: Story = {
+  args: { label: 'Appointment date', error: 'Select a valid date', defaultValue: '' },
+};
+
+export const Disabled: Story = {
+  args: { label: 'Appointment date', defaultValue: '2026-08-21', disabled: true },
+};
+
 export const DateRange: Story = {
   render: () => {
     const [range, setRange] = useState({ from: '2026-08-18', to: '2026-08-21' });

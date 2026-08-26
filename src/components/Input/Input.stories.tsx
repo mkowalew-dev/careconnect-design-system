@@ -18,10 +18,28 @@ export const WithError: Story = {
   args: { label: 'Phone Number', error: 'Invalid phone number format', defaultValue: '123' },
 };
 
+export const Disabled: Story = {
+  args: { label: 'Patient Name', placeholder: 'Search patients...', disabled: true },
+};
+
 export const SelectField: Story = {
   render: () => (
     <Select
       label="Location"
+      options={[
+        { value: 'main', label: 'Main Clinic' },
+        { value: 'west', label: 'Urgent Care West' },
+      ]}
+      fullWidth
+    />
+  ),
+};
+
+export const SelectFieldWithError: Story = {
+  render: () => (
+    <Select
+      label="Location"
+      error="Select a location"
       options={[
         { value: 'main', label: 'Main Clinic' },
         { value: 'west', label: 'Urgent Care West' },

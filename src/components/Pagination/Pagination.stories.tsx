@@ -12,3 +12,17 @@ export const ClaimsList: Story = {
     return <Pagination page={page} totalPages={8} onPageChange={setPage} />;
   },
 };
+
+export const FirstPage: Story = {
+  render: () => {
+    const [page, setPage] = useState(1);
+    return <Pagination page={page} totalPages={8} onPageChange={setPage} />;
+  },
+};
+
+export const LastPage: Story = {
+  render: () => {
+    const [page, setPage] = useState(8);
+    return <Pagination page={page} totalPages={8} onPageChange={setPage} />;
+  },
+};

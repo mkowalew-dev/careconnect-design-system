@@ -12,3 +12,11 @@ export const Default: Story = {
 export const WithHint: Story = {
   args: { label: 'Assessment & Plan', hint: 'Visible to care team only', rows: 5, fullWidth: true },
 };
+
+export const WithError: Story = {
+  args: { label: 'Chief Complaint', error: 'Chief complaint is required', fullWidth: true },
+};
+
+export const Disabled: Story = {
+  args: { label: 'Chief Complaint', placeholder: 'Patient reports...', fullWidth: true, disabled: true },
+};
