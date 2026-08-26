@@ -2,6 +2,7 @@ node_modules/
 dist/
 storybook-static/
 test-results/
+build-storybook.log
 *.tgz
 
 # SDD planning docs reference the private CareConnect monorepo — never publish them here
