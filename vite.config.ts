@@ -1,3 +1,4 @@
+/// <reference types="vitest/config" />
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import dts from 'vite-plugin-dts';
@@ -28,5 +29,12 @@ export default defineConfig({
         ...externalDeps.map((dep) => new RegExp(`^${dep}($|/)`)),
       ],
     },
+  },
+  test: {
+    environment: 'jsdom',
+    setupFiles: ['./vitest.setup.ts'],
+    include: ['src/**/*.test.{ts,tsx}'],
+    reporters: ['default', 'junit'],
+    outputFile: './test-results/junit.xml',
   },
 });
