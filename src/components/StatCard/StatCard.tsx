@@ -25,15 +25,15 @@ export function StatCard({
   ...props
 }: StatCardProps) {
   return (
-    <div className={clsx('cc-stat-card', className)} {...props}>
-      <div className="cc-stat-card__header">
-        <span className="cc-stat-card__label">{label}</span>
-        {icon && <span className="cc-stat-card__icon">{icon}</span>}
+    <div className={clsx('cc-statcard', className)} {...props}>
+      <div className="cc-statcard__header">
+        <span className="cc-statcard__label">{label}</span>
+        {icon && <span className="cc-statcard__icon">{icon}</span>}
       </div>
-      <div className="cc-stat-card__value">{value}</div>
-      {delta && <div className={clsx('cc-stat-card__delta', `cc-stat-card__delta--${deltaTrend}`)}>{delta}</div>}
+      <div className="cc-statcard__value">{value}</div>
+      {delta && <div className={clsx('cc-statcard__delta', `cc-statcard__delta--${deltaTrend}`)}>{delta}</div>}
       {sparkline && (
-        <div className="cc-stat-card__sparkline">
+        <div className="cc-statcard__sparkline">
           <ResponsiveContainer width="100%" height="100%">
             <AreaChart data={sparklineData}>
               <Area type="monotone" dataKey="v" stroke={chartColors.primary} fill={chartColors.primary} fillOpacity={0.12} strokeWidth={2} dot={false} />
