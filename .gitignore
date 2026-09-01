@@ -6,3 +6,7 @@ storybook-static/
 # SDD planning docs reference the private CareConnect monorepo — never publish them here
 docs/
 .superpowers/
+build-storybook.log
+chromatic.log
+chromatic-build-*.xml
+chromatic-diagnostics.json
