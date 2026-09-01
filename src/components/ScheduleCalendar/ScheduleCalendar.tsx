@@ -17,6 +17,13 @@ export interface ScheduleCalendarProps {
   initialView?: 'dayGridMonth' | 'timeGridWeek' | 'timeGridDay';
   height?: number | string;
   onEventClick?: (eventId: string) => void;
+  /**
+   * The date FullCalendar treats as "now" — drives the initially displayed
+   * range, the today highlight, and the now-indicator line. Defaults to the
+   * real current date/time; pass a fixed value (e.g. in Storybook) to make
+   * rendering deterministic.
+   */
+  now?: string | Date;
 }
 
 export function ScheduleCalendar({
@@ -24,6 +31,7 @@ export function ScheduleCalendar({
   initialView = 'timeGridWeek',
   height = 520,
   onEventClick,
+  now,
 }: ScheduleCalendarProps) {
   return (
     <div className="cc-schedule-calendar">
@@ -41,6 +49,7 @@ export function ScheduleCalendar({
         slotMaxTime="19:00:00"
         allDaySlot={false}
         nowIndicator
+        now={now}
         eventClick={(info) => onEventClick?.(info.event.id)}
       />
     </div>
