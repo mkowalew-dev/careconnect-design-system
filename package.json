@@ -26,7 +26,8 @@
     "changeset": "changeset",
     "version-packages": "changeset version",
     "typecheck": "tsc --noEmit",
-    "test": "vitest run"
+    "test": "vitest run",
+    "chromatic": "npx chromatic"
   },
   "dependencies": {
     "@fullcalendar/core": "^6.1.21",
